@@ -2,3 +2,36 @@
 selector {
     propiedad: valor;
 } */
+
+
+/* MEDIDAS FIJAS */
+/*cm,mm,pt o px (Se usan poco, se puede usar mas px)*/
+.medidas__p--fija {
+    font-size: 50px;
+}
+
+/* MEDIDAS RELATIVAS */
+/* REM O EM (Vamos a usar mas EM) EM equivale a 16px por defecto, pero si al contenedor padre le ponemos por ej font-size:25px; y al hijo font-size: 1em; este ultimo deja de valer 16px para valer 25px */
+.medidas {
+    font-size: 70px;
+}
+
+.medidas__p--relativa {
+    font-size: 1em;
+}
+
+/* WIDTH: 50vw (ANCHO) y HEIGHT: 50vh (ALTO) y TAMBIEN SE USA % (PORCENTAJE) */
+/* Esta medida toma como referencia el 100% del Ancho y Alto */
+.medidas {
+    background-color: greenyellow;
+    width: 50vw;
+    height: 60vh;
+}
+
+/* PROPIEDADES DE TEXTO */
+.texto__p {
+    font-size: 2em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.9; /* Es el espacio total que ocupa el texto, incluso la parte en blanco de arriba y abajo */
+    font-weight: 700; /* Grosor de la letra, depende de la tipografia */
+}
