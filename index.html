@@ -1,1 +1,28 @@
-
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Curso CSS</title>
+</head>
+<body>
+    <!--METODOLOGIA BEM-->
+    <!--Se usa para dar nombres a las CLASS sin generar conflictos, se hace por bloques y se utiliza el nombre del "Padre" para los "hijos"
+    Se pone al hijo el nombre del padre con __ y el tipo de hijo que es, por ej form__input.
+    Tambien se puede diferenciar uno en particular poniendo al final -- por ej form__input--active (o cualquier palabra final) -->
+    <div class="form">
+        <input type="text" class="form__input--active">
+        <input type="password" class="form__input">
+        <input type="email" class="form__input">
+    </div>
+    <!--Si hay un bloque dentro de otro bloque se utiliza __ y - -->
+    <div class="suscriber-form">
+        <p class="suscriber-form__p">
+            <h2 class="suscriber-form__p-h2">
+                Metodologia BEM
+            </h2>
+        </p>
+    </div>
+</body>
+</html>
